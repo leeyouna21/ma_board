@@ -1,0 +1,45 @@
+.blog__search h2 {
+	font-size: 30px;
+	padding-top: 100px;
+}
+.blog__search p {
+	font-size: 15px;
+	padding-top: 20px;
+}
+.blog__write {
+    padding: 50px 0 100px;
+    width: 100%;
+}
+.blog__write label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.blog__write input {
+    margin-bottom: 50px;
+}
+.blog__write textarea {
+    padding: 2em;
+    resize: none;
+}
+.blog__write button {
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+    transition: all 0.2s;
+}
+.blog__write select {
+    width: 250px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    border: 0;
+}
+.save {
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	background: #fff;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<title>Document</title>
+	
+</head>
+<body>
+	<main id="main" class="container">
+        <div class="boardIntro__inner center">
+            <picture class="boardIntro__img">
+                <img src="./assets/images/board.webp" alt="게시판이미지">
+            </picture>
+            <h2>게시글 보기</h2>
+            <p class="boardIntro__text">
+                내가 쓴 글 보러올래요
+            </p>
+        </div>
+        <!-- //boardIntro__inner -->
+        <div class="board__inner">
+            <div class="board__view">
+                <table>
+                    <colgroup>
+                        <col style="width: 20%">
+                        <col style="width: 80%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>제목</th>
+                            <td>게시판 제목입니다.</td>
+                        </tr>
+                        <tr>
+                            <th>등록자</th>
+                            <td>미뮤나</td>
+                        </tr>
+                        <tr>
+                            <th>등록일</th>
+                            <td>2023-08-23</td>
+                        </tr>
+                        <tr>
+                            <th>조회수</th>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td>
+                                PHP IS ...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="board__btn">
+                <a href="#" class="btnStyle3">수정하기</a>
+                <a href="#" class="btnStyle3">삭제하기</a>
+                <a href="board.html" class="btnStyle3">목록보기</a>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

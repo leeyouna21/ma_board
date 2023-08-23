@@ -1,0 +1,92 @@
+/* skip */
+#skip {
+    position: relative;
+    z-index: 1000000;
+}
+#skip a {
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -400PX;
+    top: 0;
+    padding: 20px 40px;
+}
+#skip a:active,
+#skip a:focus {
+    left: 0;
+}
+body {
+    background: #F9F7E8;
+}
+/* container */
+.container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+/* 간격 설정 */
+.mt10 {margin-top: 10px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt60 {margin-top: 60px !important;}
+.mt70 {margin-top: 70px !important;}
+.mt80 {margin-top: 80px !important;}
+.mt90 {margin-top: 90px !important;}
+.mt100 {margin-top: 100px !important;}
+
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.mb60 {margin-bottom: 60px !important;}
+.mb70 {margin-bottom: 70px !important;}
+.mb80 {margin-bottom: 80px !important;}
+.mb90 {margin-bottom: 90px !important;}
+.mb100 {margin-bottom: 100px !important;}
+
+.ml10 {margin-left: 10px !important;}
+.ml20 {margin-left: 20px !important;}
+.ml30 {margin-left: 30px !important;}
+.ml40 {margin-left: 40px !important;}
+.ml50 {margin-left: 50px !important;}
+.ml60 {margin-left: 60px !important;}
+.ml70 {margin-left: 70px !important;}
+.ml80 {margin-left: 80px !important;}
+.ml90 {margin-left: 90px !important;}
+.ml100 {margin-left: 100px !important;}
+
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
+.mr60 {margin-right: 60px !important;}
+.mr70 {margin-right: 70px !important;}
+.mr80 {margin-right: 80px !important;}
+.mr90 {margin-right: 90px !important;}
+.mr100 {margin-right: 100px !important;}
+
+
+
+.btnStyle3 {
+    display: inline-block;
+    padding: 0.5em;
+    background-color:#ffffff;
+    color: #000;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+.inputStyle {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1em 2em;
+    border: 0;
+    font-weight: 300;
+}

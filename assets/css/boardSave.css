@@ -1,0 +1,54 @@
+
+		.board__view {
+    margin-top: 40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.board__view table td,
+.board__view table th {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+.board__view table tr:last-child td {
+    height: 500px;
+    vertical-align: top;
+}
+.board__view table th {
+    background-color: #fdf0ce;
+    font-weight: 700;
+	border-right: 1px solid #000;
+}
+.board__btn {
+    margin-top: 20px;
+    text-align: right;
+}
+.board__write {
+    padding: 50px 0 100px;
+}
+.board__write label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.board__write input {
+    margin-bottom: 50px;
+}
+.board__write textarea {
+    padding: 2em;
+    resize: none;
+}
+.board__write button {
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+    transition: all 0.2s;
+}
+.board__btn {
+	/* background: #000; */
+	margin-bottom: 100px;
+}
+.board__btn .btnStyle3 {
+	background: #ffffff;
+	color: #000;
+}
