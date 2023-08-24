@@ -1,3 +1,14 @@
+<?php 
+    //print_r($_SERVER);
+    include $_SERVER["DOCUMENT_ROOT"]."/connect/connect.php";
+    
+    $sql = "SELECT count(title) AS 'count' FROM boarddata";
+    $result = $connect -> query($sql);
+    // print_r($result);
+    $boardTotalCount = $result -> fetch_array(MYSQLI_ASSOC);
+    // fetch_array를 사용해 db쿼리 결과의 다음행을 연관 배열 형태로 가져옴
+    $boardTotalCount = $boardTotalCount["count"];
+?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -23,7 +34,7 @@
             <div class="blog__write">
                 <form action="#" name="#" method="post">
                     <fieldset>
-                        <legend class="blind">게시글 작성하기</legend>
+                        <!-- <legend class="blind">게시글 작성하기</legend>
                         <div>
                             <label for="blogCategory">카테고리</label>
                             <select name="blogCategory" id="blogCategory">
@@ -33,8 +44,8 @@
                                 <option value="html">html</option>
                                 <option value="css">css</option>
                             </select>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                             <label for="blogTitle">제목</label>
                             <input type="text" id="blogTitle" name="blogTitle" class="inputStyle mb50"
                                 placeholder="제목을 입력해주세요">
@@ -42,8 +53,11 @@
                         <div>
                             <label for="blogContents">내용</label>
                             <div id="editor"></div>
-                        </div>
-                        <button type="submit" class="save"><a href="./boardSave.html">저장하기</a></button>
+                        </div> -->
+<?php
+    
+?>
+                        <button type="submit" class="save"><a href="./boardView.php">저장하기</a></button>
                     </fieldset>
                 </form>
             </div>
