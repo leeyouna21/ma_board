@@ -55,7 +55,9 @@
                             <div id="editor"></div>
                         </div> -->
 <?php
-    
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $regtime = date('Y-m-d');
 ?>
                         <button type="submit" class="save"><a href="./boardView.php">저장하기</a></button>
                     </fieldset>
