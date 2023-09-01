@@ -52,3 +52,9 @@
 	background: #ffffff;
 	color: #000;
 }
+.board__btn .btnStyle4 {
+	background: #ffafaf;
+	color: #000;
+    position: absolute;
+    left: 17%;
+}

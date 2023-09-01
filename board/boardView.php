@@ -40,33 +40,43 @@
         // print_r($num);
 
         // 보드뷰 + 1
-        $sql = "UPDATE boarddata SET content = content + 1 WHERE num = {$num}";
-        $connect -> query($sql);
+		$sql = "UPDATE boarddata SET view = view + 1 WHERE num = {$num}";
+		$connect -> query($sql);
+		
         // print_r($connect);
 
-        $sql = "SELECT num, title, content, regtime, etc FROM boarddata WHERE num = {$num}";
+        //수정일
+        $sqlUpdateModtime = "UPDATE boarddata SET modtime = NOW() WHERE num = {$num}";
+        $connect->query($sqlUpdateModtime);
+
+        $sql = "SELECT num, title, view, modtime, content, regtime, etc FROM boarddata WHERE num = {$num}";
         $result = $connect -> query($sql);
         // print_r($result);
 
         if($result) {
             $info = $result -> fetch_array(MYSQLI_ASSOC);
-
+        
             echo "<tr><th>제목</th><td>".$info['title']."</td></tr>";
-            echo "<tr><th>등록자</th><td>".$info['content']."</td></tr>";
+			// echo "<tr><th>등록자</th><td>".$info['etc']."</td></tr>";
             echo "<tr><th>등록일</th><td>".$info['regtime']."</td></tr>";
-            echo "<tr><th>조회수</th><td>".$info['view']."</td></tr>";
-            echo "<tr><th>내용</th><td>".$info['etc']."</td></tr>";
+            echo "<tr><th>수정일</th><td>".$info['modtime']."</td></tr>";
+            if (isset($info['view'])) {
+                echo "<tr><th>조회수</th><td>".$info['view']."</td></tr>";
+            } else {
+                echo "<tr><th>조회수</th><td>조회수 정보 없음</td></tr>";
+            }   
+            echo "<tr><th>내용</th><td>".$info['content']."</td></tr>";
         }
     } else {
-        echo "<tr><td colspan='5'>게시글이 없습니다.</td></tr>";
+        echo "<tr><td colspan='5'>게시글이 없습니다ㅠㅠ. 왜 없어요...</td></tr>";
     }
 ?>
                     </tbody>
                 </table>
             </div>
             <div class="board__btn">
-                <a href="#" class="btnStyle3">수정하기</a>
-                <a href="#" class="btnStyle3">삭제하기</a>
+                <a href="boardModify.php?num=<?php echo $num; ?>" class="btnStyle3">수정하기</a>
+                <a href="boardRemove.php?num=<?php echo $num; ?>" class="btnStyle4">삭제하기</a>
                 <a href="board.php" class="btnStyle3">목록보기</a>
             </div>
         </div>
