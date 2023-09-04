@@ -6,7 +6,6 @@
 	<title>Document</title>
 	<script src="/js/jquery-1.11.2.min.js"></script>
 	<script>
-		
 		$(function(){
 			$('button').on('click' , function(e){
 				$.get("/board/ajax_board.php", function(data){
@@ -14,7 +13,7 @@
 					/* 데이터가 정상적으로 들어왔는지만 판단함
 					보통 갯수나 상태값 확인 */
 					if(data.length!=0){
-						console.log('success'+data.length);
+						//console.log('success'+data.length);
 					}
 				},"json")
 				.done(function(data){ /* 정상적으로 데이터를 가져왔을 경우 실행됨 */
@@ -25,7 +24,7 @@
 					*/
 					$.each($(data), function(i,value){
 						//console.log(value);
-						console.log(value);
+						//console.log(value);
 						$('ul').append('<li>'+ value.userId + value.regtime +'</li>');
 					});
 					
